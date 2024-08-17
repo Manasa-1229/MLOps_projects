@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: networksecurity
+Version: 0.0.1
+Author: Manasa Gonuguntla
+Author-email: manugonuguntla29@gmail.com
+Requires-Dist: pandas
+Requires-Dist: pymongo
+Requires-Dist: certifi
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
