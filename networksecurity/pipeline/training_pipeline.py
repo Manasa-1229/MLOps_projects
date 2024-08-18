@@ -12,13 +12,13 @@ from networksecurity.components.model_evaluation import ModelEvaluation
 from networksecurity.components.model_pusher import ModelPusher
 
 from networksecurity.entity.config_entity import(
-    TrainingPipelineconfig,
-    DataIngestionconfig,
-    DataValidationconfig,
-    DataTransformationconfig,
-    ModelTrainerconfig,
-    ModelEvaluationconfig,
-    ModelPusherconfig
+    TrainingPipelineConfig,
+    DataIngestionConfig,
+    DataValidationConfig,
+    DataTransformationConfig,
+    ModelTrainerConfig,
+    ModelEvaluationConfig,
+    ModelPusherConfig
 )
 
 from networksecurity.entity.artifact_entity import (
