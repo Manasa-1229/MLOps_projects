@@ -6,34 +6,34 @@ print(training_pipeline.ARTIFACT_DIR)
 print(training_pipeline.PIPELINE_NAME)
 
 
-class TrainingPipelineConfig(self):
+class TrainingPipelineConfig:
     def __init__(self):
         pass
     
 
-class DataIngestionConfig(self):
+class DataIngestionConfig:
     def __init__(self):
         pass
 
-class DataValidationConfig(self):
-    def __init__(self):
-        pass
-    
-
-class DataTransformationConfig(self):
-    def __init__(self):
-        pass
-
-class ModelTrainerConfig(self):
+class DataValidationConfig:
     def __init__(self):
         pass
     
 
-class ModelEvaluationConfig(self):
+class DataTransformationConfig:
     def __init__(self):
         pass
 
-class ModelPusherConfig(self):
+class ModelTrainerConfig:
+    def __init__(self):
+        pass
+    
+
+class ModelEvaluationConfig:
+    def __init__(self):
+        pass
+
+class ModelPusherConfig:
     def __init__(self):
         pass
 
