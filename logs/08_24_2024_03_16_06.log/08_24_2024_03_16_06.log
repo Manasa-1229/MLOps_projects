@@ -1,0 +1,24 @@
+[ 2024-08-24 03:16:08,227 ] 11 root - INFO - Training has started
+[ 2024-08-24 03:16:08,227 ] 42 root - INFO - Starting data ingestion
+[ 2024-08-24 03:16:11,092 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-08-24 03:16:11,092 ] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-08-24 03:16:11,092 ] 71 root - INFO - Exporting train and test file path.
+[ 2024-08-24 03:16:11,206 ] 79 root - INFO - Exported train and test file path.
+[ 2024-08-24 03:16:11,208 ] 45 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_24_2024_03_16_07\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_24_2024_03_16_07\\data_ingestion\\ingested\\test.csv')
+[ 2024-08-24 03:16:11,298 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-24 03:16:11,298 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-24 03:16:11,298 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-24 03:16:11,298 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-24 03:16:11,444 ] 131 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\08_24_2024_03_16_07\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\08_24_2024_03_16_07\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\08_24_2024_03_16_07\\data_validation\\drift_report\\report.yaml')
+[ 2024-08-24 03:16:11,444 ] 86 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2024-08-24 03:16:11,444 ] 89 root - INFO - Starting data transformation
+[ 2024-08-24 03:16:11,493 ] 59 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[ 2024-08-24 03:16:11,493 ] 68 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-08-24 03:16:11,493 ] 74 root - INFO - Exited get_data_transformer_object method of DataTransformation class
+[ 2024-08-24 03:16:11,493 ] 97 root - INFO - Got the preprocessor object
+[ 2024-08-24 03:16:11,502 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-08-24 03:16:11,512 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-08-24 03:16:11,512 ] 129 root - INFO - Data transformation artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts\\08_24_2024_03_16_07\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\08_24_2024_03_16_07\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\08_24_2024_03_16_07\\data_transformation\\transformed\\test.npy')
+[ 2024-08-24 03:16:11,741 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-08-24 03:16:11,749 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-08-24 03:16:11,749 ] 86 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\08_24_2024_03_16_07\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9882769075290551), precision_score=np.float64(0.9849919419822724), recall_score=np.float64(0.9915838572297708)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.980940794809408), precision_score=np.float64(0.9754032258064517), recall_score=np.float64(0.986541598694943)))
