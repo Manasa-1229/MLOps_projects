@@ -5,5 +5,6 @@ python-dotenv
 numpy
 pymongo[srv]
 scikit-learn
-
+dill
+pyyaml
 -e .
