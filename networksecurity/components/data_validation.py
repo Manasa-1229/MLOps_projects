@@ -22,6 +22,7 @@ class DataValidation:
     
     def validate_number_of_columns(self,dataframe:pd.DataFrame)->bool:
         try:
+            print("in Validate function")
             number_of_columns = len(self._schema_config["columns"])
             logging.info(f"Required number of columns: {number_of_columns}")
             logging.info(f"Data frame has columns: {len(dataframe.columns)}")
@@ -101,13 +102,16 @@ class DataValidation:
             #Reading data from train and test file location
             train_dataframe = DataValidation.read_data(train_file_path)
             test_dataframe = DataValidation.read_data(test_file_path)
+            print(train_dataframe.head)
             
             #Validate number of columns
             status = self.validate_number_of_columns(dataframe=train_dataframe)
             if not status:
+                #print("Debugging")
                 error_message=f"{error_message}Train dataframe does not contain all columns.\n"
             status = self.validate_number_of_columns(dataframe=test_dataframe)
             if not status:
+                #print("Debugging2")
                 error_message=f"{error_message}Test dataframe does not contain all columns.\n"    
             #if len(error_message)>0:
                 #raise Exception(error_message)

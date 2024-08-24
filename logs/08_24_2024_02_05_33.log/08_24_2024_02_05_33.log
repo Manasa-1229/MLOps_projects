@@ -1,0 +1,12 @@
+[ 2024-08-24 02:05:34,697 ] 11 root - INFO - Training has started
+[ 2024-08-24 02:05:34,697 ] 42 root - INFO - Starting data ingestion
+[ 2024-08-24 02:05:37,174 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-08-24 02:05:37,174 ] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-08-24 02:05:37,174 ] 71 root - INFO - Exporting train and test file path.
+[ 2024-08-24 02:05:37,305 ] 79 root - INFO - Exported train and test file path.
+[ 2024-08-24 02:05:37,306 ] 45 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_24_2024_02_05_34\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_24_2024_02_05_34\\data_ingestion\\ingested\\test.csv')
+[ 2024-08-24 02:05:37,387 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-24 02:05:37,387 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-24 02:05:37,387 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-24 02:05:37,387 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-24 02:05:37,554 ] 131 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\08_24_2024_02_05_34\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\08_24_2024_02_05_34\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\08_24_2024_02_05_34\\data_validation\\drift_report\\report.yaml')
