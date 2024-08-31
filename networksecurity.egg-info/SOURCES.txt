@@ -25,6 +25,6 @@ networksecurity/logger/logger.py
 networksecurity/pipeline/__init__.py
 networksecurity/pipeline/training_pipeline.py
 networksecurity/utils/__init__.py
-networksecurity/utils/ml_utils.py
 networksecurity/utils/main_utils/__init__.py
 networksecurity/utils/main_utils/utils.py
+networksecurity/utils/ml_utils/__init__.py
