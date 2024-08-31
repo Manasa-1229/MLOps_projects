@@ -124,6 +124,7 @@ class TrainingPipeline:
                 print("Trained model is not better than the best model")
             print(model_eval_artifact)
             model_pusher_artifact = self.start_model_pusher(model_eval_artifact)
+            TrainingPipeline.is_pipeline_running=False
         except Exception as e:
             raise NetworkSecurityException(e,sys)
         
