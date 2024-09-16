@@ -22,3 +22,27 @@
 [ 2024-08-31 01:13:07,809 ] 61 root - INFO - Exited the save_object method of MainUtils class
 [ 2024-08-31 01:13:07,809 ] 86 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\08_31_2024_01_12_19\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9880321163460082), precision_score=np.float64(0.9835126168694078), recall_score=np.float64(0.9925933441558441)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9852555039385983), precision_score=np.float64(0.9783393501805054), recall_score=np.float64(0.9922701383238405)))
 [ 2024-08-31 01:13:08,072 ] 101 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=False, improved_accuracy=np.float64(0.0002620117610303563), best_model_path='saved_models\\1725084374\\model.pkl', trained_model_path='Artifacts\\08_31_2024_01_12_19\\model_trainer\\trained_model\\model.pkl', train_model_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9874767714308799), precision_score=np.float64(0.982475884244373), recall_score=np.float64(0.9925288289751503)), best_model_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9872147596698495), precision_score=np.float64(0.9837123044670214), recall_score=np.float64(0.9907422445996427)))
+[ 2024-08-31 01:25:58,188 ] 47 root - INFO - Starting data ingestion
+[ 2024-08-31 01:26:01,280 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-08-31 01:26:01,280 ] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-08-31 01:26:01,280 ] 71 root - INFO - Exporting train and test file path.
+[ 2024-08-31 01:26:01,431 ] 79 root - INFO - Exported train and test file path.
+[ 2024-08-31 01:26:01,433 ] 50 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_31_2024_01_12_19\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_31_2024_01_12_19\\data_ingestion\\ingested\\test.csv')
+[ 2024-08-31 01:26:01,538 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-31 01:26:01,538 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-31 01:26:01,539 ] 27 root - INFO - Required number of columns: 31
+[ 2024-08-31 01:26:01,539 ] 28 root - INFO - Data frame has columns: 31
+[ 2024-08-31 01:26:01,876 ] 138 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\08_31_2024_01_12_19\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\08_31_2024_01_12_19\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\08_31_2024_01_12_19\\data_validation\\drift_report\\report.yaml')
+[ 2024-08-31 01:26:01,879 ] 86 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2024-08-31 01:26:01,879 ] 89 root - INFO - Starting data transformation
+[ 2024-08-31 01:26:01,950 ] 59 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[ 2024-08-31 01:26:01,950 ] 68 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-08-31 01:26:01,950 ] 74 root - INFO - Exited get_data_transformer_object method of DataTransformation class
+[ 2024-08-31 01:26:01,950 ] 97 root - INFO - Got the preprocessor object
+[ 2024-08-31 01:26:01,980 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-08-31 01:26:01,988 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-08-31 01:26:01,988 ] 129 root - INFO - Data transformation artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts\\08_31_2024_01_12_19\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\08_31_2024_01_12_19\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\08_31_2024_01_12_19\\data_transformation\\transformed\\test.npy')
+[ 2024-08-31 01:26:02,246 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-08-31 01:26:02,256 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-08-31 01:26:02,257 ] 86 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\08_31_2024_01_12_19\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.988399071925754), precision_score=np.float64(0.9857142857142858), recall_score=np.float64(0.9910985231640704)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9835526315789473), precision_score=np.float64(0.9819376026272578), recall_score=np.float64(0.985172981878089)))
+[ 2024-08-31 01:26:02,486 ] 101 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=False, improved_accuracy=np.float64(-3.246199386086612e-05), best_model_path='saved_models\\1725084788\\model.pkl', trained_model_path='Artifacts\\08_31_2024_01_12_19\\model_trainer\\trained_model\\model.pkl', train_model_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.987444309437019), precision_score=np.float64(0.9849709114414997), recall_score=np.float64(0.9899301607925938)), best_model_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9874767714308799), precision_score=np.float64(0.982475884244373), recall_score=np.float64(0.9925288289751503)))
